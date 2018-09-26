@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="fragment-2">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Fragment-2 App"/>
   </div>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-#app {
+#fragment-2 {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
