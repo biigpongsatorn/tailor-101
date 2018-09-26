@@ -1,0 +1,5 @@
+# tailor-101
+
+Proof of concept Layout Service name Tailor
+
+<img src="https://camo.githubusercontent.com/3018354754cc0c9f1f6b27ac68bd8060a11db5a7/68747470733a2f2f7261776769746875622e636f6d2f7a616c616e646f2f7461696c6f722f6d61737465722f6c6f676f2f7461696c6f722d6c6f676f2e737667">
