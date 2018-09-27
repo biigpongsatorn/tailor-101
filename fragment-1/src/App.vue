@@ -1,5 +1,8 @@
 <template>
   <div id="fragment-1">
+    <div>
+      my data : {{ myData }}
+    </div>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your fragment-1 App"/>
   </div>
@@ -7,9 +10,18 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import axios from 'axios'
 
 export default {
   name: 'fragment-1',
+  data () {
+    return {
+      myData: null
+    }
+  },
+  async created () {
+    this.myData = await axios.get('https://api.sellsuki.com/')
+  },
   components: {
     HelloWorld
   }
