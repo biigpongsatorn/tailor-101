@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production' ? 'https://fragment-1.line-objects-dev.com/' : '/'
+  baseUrl: process.env.NODE_ENV === 'production' ? 'http://localhost:7071/' : '/'
 }

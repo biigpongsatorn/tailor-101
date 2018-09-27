@@ -5,7 +5,10 @@ const tailor = new Tailor({
 })
 http.createServer((req, res) => {
   if (req.url === '/favicon.ico') {
-    res.writeHead(200, { 'Content-Type': 'image/x-icon' })
+    res.writeHead(200, {
+      'Content-Type': 'image/x-icon',
+      'Cache-Controll': 'no-cache, no-store, must-revalidate'
+    })
     return res.end('')
   }
   req.headers['x-request-uri'] = req.url
