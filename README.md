@@ -11,24 +11,29 @@ git clone https://github.com/biigpongsatorn/tailor-101.git
 
 // Tab 1
 cd basic-html
+npm install
 npm run start
 
 // Tab 2
 cd fragment-1
+npm install
 npm run build
 npm run start
 
 // Tab 3
 cd fragment-2
+npm install
 npm run build
 npm run start
 
 // Tab 4
 cd ssr-fragment
+npm install
 npm run build
 npm run start
 
 // Tab 5
 cd node-tailor
+npm install
 npm run start
 ```
