@@ -36,4 +36,6 @@ npm run start
 cd node-tailor
 npm install
 npm run start
+
+// Tailor server listening on port 8080
 ```
