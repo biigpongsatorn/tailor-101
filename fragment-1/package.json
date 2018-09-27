@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "npm run build && http-server ./dist -p 7071"
+    "start": "http-server ./dist -p 7071"
   },
   "dependencies": {
     "axios": "^0.18.0",
