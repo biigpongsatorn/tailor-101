@@ -33,6 +33,10 @@ npm run build
 npm run start
 
 // Tab 5
+cd sync-async
+npm run start
+
+// Tab 6
 cd node-tailor
 npm install
 npm run start

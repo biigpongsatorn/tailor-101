@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div>
+      <fragment id="basic-html" src="http://localhost:7070"></fragment>
+    </div>
+    <div>
+      <fragment async id="sync-async" src="http://localhost:3001" fallback-src="http://localhost:7070" timeout="5000"></fragment>
+    </div>
+    <div>
+      <fragment src="http://localhost:7070"></fragment>
+    </div>
+  </body>
+</html>
