@@ -38,8 +38,8 @@ npm run start
 
 // Tab 6
 cd node-tailor
-npm install
-npm run start
+docker build -t tailor-layout-service .
+docker run -p 8080:8080 tailor-layout-service
 
 // Tailor server listening on port 8080
 ```
