@@ -1,26 +1,30 @@
 <template>
   <div id="fragment-1">
-    <div>
-      my data : {{ myData }}
-    </div>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your fragment-1 App"/>
+    fragment 1
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import axios from 'axios'
+import 'pubsub-js'
 
 export default {
   name: 'fragment-1',
   data () {
     return {
-      myData: null
+      myData: null,
+      payload: {}
     }
   },
   async created () {
-    this.myData = await axios.get('https://api.sellsuki.com/')
+    // this.myData = await axios.get('https://api.sellsuki.com/')
+    PubSub.subscribe('oms.chat', (channel, msg) => {
+      console.log('published from = ', channel)
+      console.log('message is = ', msg)
+    })
   },
   components: {
     HelloWorld
