@@ -1,19 +1,28 @@
 <template>
   <div id="fragment-2">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Fragment-2 App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Fragment-2 App"/> -->
+    fragment 2
+    <button @click="sendMessage">send message</button>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import 'pubsub-js'
 
 export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  methods: {
+    sendMessage () {
+      console.log('send message')
+      PubSub.publish('oms.chat.msg', 'hello world')
+    }
   }
-}
+ }
 </script>
 
 <style>
